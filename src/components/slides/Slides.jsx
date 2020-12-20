@@ -15,6 +15,11 @@ import { Component } from 'react';
 import banner1 from '../images/banner1.jpg';
 import banner2 from '../images/banner2.jpg';
 import banner3 from '../images/banner3.jpg';
+import {faAngleLeft} from '@fortawesome/free-solid-svg-icons'
+import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Carousel from 'react-bootstrap/Carousel'
+
 
 
 
@@ -22,34 +27,25 @@ import banner3 from '../images/banner3.jpg';
   class Slides extends Component{
       render(){
         return (
-            <section className="slider_section">
-                <div id="main_slider" className="carousel slide banner-main" data-ride="carousel">
+                <div >                    
 
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img className="first-slide" src={banner1} alt="First slide"/>                            
-                        </div>
-                        
-                        <div className="carousel-item">
-                            <img className="second-slide" src={banner2} alt="Second slide"/>                            
-                        </div>
+                    <Carousel>
+                        <Carousel.Item>                            
+                            <img className="d-block w-100" src={banner1} alt="First slide"/>  
+                        </Carousel.Item>
 
-                        <div className="carousel-item">
-                            <img className="third-slide" src={banner3} alt="Third slide"/>                            
-                        </div>
+                        <Carousel.Item>                            
+                        <   img className="d-block w-100" src={banner2} alt="Second slide"/>      
+                        </Carousel.Item>
 
-                    </div>
+                        <Carousel.Item>                            
+                            <img className="d-block w-100" src={banner3} alt="Third slide"/>    
+                        </Carousel.Item>
+                    </Carousel>
 
-                    <a className="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-                        <i className='fa fa-angle-right'></i>
-                    </a>
-                    <a className="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-                        <i className='fa fa-angle-left'></i>
-                    </a>
 
                 </div>
 
-            </section>
         );
       }
   }
