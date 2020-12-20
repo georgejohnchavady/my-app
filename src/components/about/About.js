@@ -3,19 +3,17 @@ import '../css/style.css';
 import '../css/responsive.css';
 import '../css/jquery.mCustomScrollbar.min.css'
 import Header from '../header/Header'
-import Slides from '../slides/Slides'
-import Products from '../products/Products'
-import Maps from '../maps/Maps'
+import Banner from '../about/Banner'
+import Content from '../about/Content'
 import Footer from '../footer/Footer'
 
-function Home() {
+function About() {
     return ( <div className="main-layout">
                 <Header/> 
-                <Slides/>   
-                <Products/>
-                <Maps/>
+                <Banner/>
+                <Content/>
                 <Footer/>
             </div>
         );
 }
-export default Home;
+export default About;

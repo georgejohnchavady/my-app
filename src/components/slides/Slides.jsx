@@ -10,14 +10,11 @@ import '../css/responsive.css';
 import '../css/slick.css';
 import '../css/style.css';
 
-
 import { Component } from 'react';
 import banner1 from '../images/banner1.jpg';
 import banner2 from '../images/banner2.jpg';
 import banner3 from '../images/banner3.jpg';
-import {faAngleLeft} from '@fortawesome/free-solid-svg-icons'
-import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import Carousel from 'react-bootstrap/Carousel'
 
 
